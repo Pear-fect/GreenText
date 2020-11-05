@@ -1,0 +1,55 @@
+@import "themes.css";
+
+* {
+    margin: 0;
+    padding: 0.3vw;
+    border: none;
+    font-size: 0.99em;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-tx-color);
+
+
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+input {
+    display: none;
+}
+  
+label {
+  font-size: 1rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+input:checked ~ .hidden {
+    max-height: 500px;
+}
+
+.button {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    max-height: 0;
+    display: flex;
+    overflow: hidden;
+    margin-left: 1rem;
+    flex-direction: column;
+    transition: max-height ease-in-out 0.5s;
+}

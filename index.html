@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/indexStyle.css"/>
+    <script src="js/theme.js"></script>
+    <title>GreenText</title>
+</head>
+<body>
+    <div class="button">
+        <input type="checkbox" id="enter">
+        <label for="enter">> Enter</label>
+        <div class="hidden">
+            <div class="button">
+                <input type="checkbox" id="test">
+                <label for="test">> test</label>
+                <div class="hidden">test</div>
+            </div>
+        </div>
+    </div>
+    <div class="button">
+        <input type="checkbox" id="color">
+        <label for="color">> Color selector</label>
+        <div class="hidden">
+            <div class="button">
+                <input type="checkbox" id="background">
+                <label for="background">> Background Color</label>
+                <div class="hidden">
+                    <a href="#" class="blackBack" onclick="setTheme('', 'blackBack')">Black</a>
+                    <a href="#" class="darkBack" onclick="setTheme('', 'darkBack')">Dark</a>
+                    <a href="#" class="grayBack" onclick="setTheme('', 'grayBack')">Gray</a>
+                    <a href="#" class="whiteBack" onclick="setTheme('', 'whiteBack')">White</a>
+                </div>
+            </div>
+            <div class="button">
+                <input type="checkbox" id="text">
+                <label for="text">> Text Color</label>
+                <div class="hidden">
+                    <a href="#" class="purpleText" onclick="setTheme('purpleText', '')">Purple</a>
+                    <a href="#" class="greenText" onclick="setTheme('greenText', '')">Green</a>
+                    <a href="#" class="redText" onclick="setTheme('redText', '')">Red</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
