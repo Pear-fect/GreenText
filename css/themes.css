@@ -15,20 +15,28 @@
 
 .blackBack{
     --main-bg-color: #000000;
-    border: 5px solid #000000;
+    background-color: #000000;
+    color: var(--main-tx-color);
+    padding: 0.5vw;
 }
 
 .darkBack{
     --main-bg-color: #0f0f0f;
-    border: 5px solid #0f0f0f;
+    background-color: #0f0f0f;
+    color: var(--main-tx-color);
+    padding: 0.5vw;
 }
 
 .grayBack{
     --main-bg-color: #3f3f3f;
-    border: 5px solid #3f3f3f;
+    background-color: #3f3f3f;
+    color: var(--main-tx-color);
+    padding: 0.5vw;
 }
 
 .whiteBack{
     --main-bg-color: #efefef;
-    border: 5px solid #efefef;
+    background-color: #efefef;
+    color: var(--main-tx-color);
+    padding: 0.5vw;
 }
